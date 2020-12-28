@@ -114,6 +114,18 @@ var sub = document.getElementsByClassName('submenu')[0];
 				<iframe  class="video" src="https://www.youtube.com/embed/5yDZ2rbG8_s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			
+			<div class="flex bodyText">
+				Child's Play is a passion project of mine that I have had the priviledge of working on with another student at Clemson. As the production lead and storyboard artist I conceptualized and storyboarded the entire film before any other work  began. After the inital ground work had been laid, I took the role as lead animator and layout artist. 
+				<br>
+				<br>
+				In the final section of film I animated shots : 
+				<br>
+				4  .  5  .  6  .  7  .  11  .  16  .  17  .  19  .  21  .  22  .  23
+				<br>
+				<br>
+				One of the most fun challenges this project brought was figuring out how to express emotion through posing characters who had no faces and traditional bodies. In the boarding process, I focused on pushing the characters posing through their "spines" to help portray their emotions. 
+			</div>
+			
 			<div class="projectTitle">
 				<div class="featuredSubtitle">Child's Play StoryReel</div>
 				<div class="gradient"></div>
@@ -135,67 +147,67 @@ var sub = document.getElementsByClassName('submenu')[0];
 					<div class="headSubtitle margin15">StoryArc</div>
 				</div>
 				
-				<div class="image"><img src="art assets/childsPlay/Johnson_Ashley_backgroundStudy.JPG" alt="">
+				<div class="image"><img src="art assets/childsPlay/Johnson_Ashley_backgroundStudy.JPG" onclick="openModal();currentSlide(2)" alt="">
 				<div class="headSubtitle margin15">Environment Concept Study</div></div>
 			</div>
 			
-			<div id="myModal" class="modal">
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/childsPlay/A_Design.JPG" onclick="openModal();currentSlide(3)" alt="">
+				<div class="headSubtitle margin15">A Character Study</div></div>
+				
+				<div class="image"><img src="art assets/childsPlay/D_Design.JPG" onclick="openModal();currentSlide(4)" alt="">
+				<div class="headSubtitle margin15">D Character Study</div></div>
+				
+				<div class="image"><img src="art assets/childsPlay/P_Design.JPG" onclick="openModal();currentSlide(5)" alt="">
+				<div class="headSubtitle margin15">P Character Study</div></div>
+			</div>
+			
+<div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="art assets/childsPlay/Johnson_Ashley_DPA_StoryArc_v3.JPG" style="width:100%">
+      <img src="art assets/childsPlay/Johnson_Ashley_DPA_StoryArc_v3.JPG" alt="Story Arc" style="max-height: 70vh">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
+      <img src="art assets/childsPlay/Johnson_Ashley_backgroundStudy.JPG" style="max-height: 70vh">
     </div>
-
+	  
     <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
+      <img src="art assets/childsPlay/A_Design.JPG" style="max-height: 70vh">
     </div>
-    
+	  
+	<div class="mySlides">
+      <img src="art assets/childsPlay/D_Design.JPG" style="max-height: 70vh">
+    </div>
+	  
     <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img_lights_wide.jpg" style="width:100%">
+      <img src="art assets/childsPlay/P_Design.JPG" style="max-height: 70vh">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
     <div class="caption-container">
-      <p id="caption"></p>
+      <p id="caption" class="featuredSubtitle"></p>
     </div>
-
-
+	  
     <div class="column">
-      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      <img class="demo cursor" src="art assets/childsPlay/Johnson_Ashley_DPA_StoryArc_v3.JPG"  onclick="currentSlide(1)" alt="StoryArc">
+	  
+      <img class="demo cursor" src="art assets/childsPlay/Johnson_Ashley_backgroundStudy.JPG"  onclick="currentSlide(2)" alt="Environment Study">
+	  
+      <img class="demo cursor" src="art assets/childsPlay/A_Design.JPG"  onclick="currentSlide(3)" alt="A Character Design">
+	  
+      <img class="demo cursor" src="art assets/childsPlay/D_Design.JPG"  onclick="currentSlide(4)" alt="D Character Design">
+	  
+	
+      <img class="demo cursor" src="art assets/childsPlay/P_Design.JPG"  onclick="currentSlide(5)" alt="P Character Design">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
+	  
   </div>
 </div>
-			
-			<div class="imageGallery">
-				<div class="image"><img src="art assets/childsPlay/A_Design.JPG" alt="">
-				<div class="headSubtitle margin15">A Character Study</div></div>
-				
-				<div class="image"><img src="art assets/childsPlay/D_Design.JPG" alt="">
-				<div class="headSubtitle margin15">D Character Study</div></div>
-				
-				<div class="image"><img src="art assets/childsPlay/P_Design.JPG" alt="">
-				<div class="headSubtitle margin15">P Character Study</div></div>
-			</div>
 			
 			<!-- Board Progressions -->
 			
@@ -213,14 +225,59 @@ var sub = document.getElementsByClassName('submenu')[0];
 				<div class="image"><img src="art assets/childsPlay/storyboards/v1/IMG_0242.JPG" alt=""></div>
 				<div class="image"><img src="art assets/childsPlay/storyboards/v1/IMG_0243.JPG" alt=""></div>
 			</div>
-			
+			<div class="gradient"></div>
 			<div class="flex">
 				<div class="headSubtitle">Version 3</div>
 			</div>
 			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/childsPlay/storyboards/v2/IMG_0264.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v2/IMG_0265.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v2/IMG_0266.JPG" alt=""></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/childsPlay/storyboards/v2/IMG_0267.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v2/IMG_0268.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v2/IMG_0270.JPG" alt=""></div>
+			</div>
+			<div class="gradient"></div>
 			<div class="flex">
 				<div class="headSubtitle">Version 6</div>
 			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/childsPlay/storyboards/v6/Explosion_Pg_1.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v6/Explosion_Pg_2.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v6/Explosion_Pg_3.JPG" alt=""></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/childsPlay/storyboards/v6/Explosion_Pg_4.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v6/Explosion_Pg_5.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v6/Explosion_Pg_6.JPG" alt=""></div>
+				<div class="image"><img src="art assets/childsPlay/storyboards/v6/Explosion_Pg_7.JPG" alt=""></div>
+			</div>
+			
+		<!-- Background Studies -->
+			
+		<div class="projectTitle">
+			<div class="featuredSubtitle">Background Studies</div>
+			<div class="gradient"></div>
+		</div>
+			
+		<div class="imageGallery wrap">
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_BgSketch_v13.JPG" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_BgSketch_v12.JPG" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_BgSketch_v14.JPG" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_BgSketch_v11.JPG" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_shot8_greyscale_.jpg" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_shot5_greyscale.jpg" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_shot40_greyscale.jpg" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/Explosion_shot40_colorTest.jpg" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/shot4_colorBackground_v1.jpg" alt=""></div>
+			<div class="image width30"><img src="art assets/childsPlay/shot5_background_color_v2.jpg" alt=""></div>
+		</div>
 			
 			<div class="footer">
 				<div class="gradient"></div>
@@ -272,7 +329,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }

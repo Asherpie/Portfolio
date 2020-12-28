@@ -565,6 +565,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	justify-content: center
 }
 
 .image {
@@ -576,12 +577,20 @@ a {
 	transform: scale(1.1);
 }
 
+.wrap {
+	flex-wrap: wrap;
+}
+
+.width30 {
+	width: 30vw;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
@@ -593,7 +602,6 @@ a {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -619,6 +627,7 @@ a {
 
 .mySlides {
   display: none;
+  justify-content: center;
 }
 
 .cursor {
@@ -684,10 +693,17 @@ img {
   opacity: 1;
 }
 
-img.hover-shadow {
-  transition: 0.3s;
+.column {
+	height: 10vh;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.bodyText {
+	font-family: "Avenir";
+	font-size: 18px;
+	color: #813A5B;
+	text-align: center;
+	margin-top: 60px;
 }
