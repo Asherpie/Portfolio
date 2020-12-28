@@ -1,7 +1,571 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.test {
-	font-size: 3em;
-	color: blueviolet
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html {
+	background-color: #F1F1F1;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	src: url("fonts/Avenir Next.ttc");
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("fonts/Avenir.ttc");
+}
+
+@font-face {
+	font-family: "AvenirNextLTPro-Regular";
+	src: url("fonts/AvenirNextLTPro-Regular.ttf");
+}
+
+@font-face {
+	font-family: "AvenirNextLTPro-Medium";
+	src: url("fonts/AvenirNextLTPro-Medium.ttf");
+}
+
+@font-face {
+	font-family: "AvenirNextLTPro-Demi";
+	src: url("fonts/AvenirNextLTPro-Demi.ttf");
+}
+
+@font-face {
+	font-family: "AvenirNextLTPro-Heavy";
+	src: url("fonts/AvenirNextLTPro-Heavy.ttf");
+}
+/* NAV MENU */
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #382E61;
+  opacity: .5;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #EB9A50;
+  opacity: .5;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: fixed;
+  width: 450px;
+  height: 92vh;
+  margin: -60px 0 0 -30px;
+  padding: 50px;
+  padding-top: 125px;
+  font-family: "AvenirNextLTPro-Demi";
+  font-style: italic;
+  font-size: 40px;
+  background: #E7E7E7;
+  color: #382E61;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-110%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  box-sizing: border-box;
+	margin-left: -60px;
+	margin-top: -90px;
+}
+
+#menu li
+{
+  padding: 10px 0;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.submenu a {
+  
+}
+
+/* hover behaviour for links inside .submenu */
+.submenuopened a:hover {
+  
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  font-family: "AvenirNext-UltraLight";
+  font-style: italic;
+	font-size: 30px;
+  -webkit-transition: all 0.5s ease-out;
+}
+.subrollin{
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+ margin-left: -30px;
+  -webkit-transition: all 0.5s ease-in;
+}
+.subrollout{
+  overflow: block;
+  max-height: 500px;
+  opacity: 1;
+  margin-left: 50px;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.arrow {
+  border: solid #382E61;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+
+.arrow #menuToggle a:hover {
+	color: #EB9A50;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+	margin-bottom: 0px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.navMargin {
+	margin-top: -105px;
+	margin-left: -30px;
+	height: 91vh;
+	width: 445px;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+.navOffset {
+	margin-top: 10vh;
+}
+
+/* ROADMAP STYLES */
+
+.roadmapwrapper {
+	display: flex;
+	overflow: hidden;
+	position: fixed;
+	height: 100vh;
+	z-index: -1;
+}
+
+.centerContent {
+	width: 70vw;
+	height: 150px;
+	background-color: #F1F1F1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Header {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+	position: fixed;
+	top: 0px;
+}
+
+.absolute {
+	position: absolute;
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+.headTitle {
+	font-family: "AvenirNextLTPro-Medium";
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+	color: #813A5B;
+}
+
+.gradient {
+	width: 100%;
+	height: 2px;
+    background: linear-gradient(to right, #EB9A50, #BE427D, #6547A7);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.headSubtitle {
+	font-family: "Avenir";
+	font-style: italic;
+	font-size: 18px;
+	color: #813A5B;
+}
+
+.leftRoadmap {
+	width: 15vw;
+	font-family: AvenirNextLTPro-Heavy;
+	color: #E9E9E9;
+	font-size: 10vw;
+	line-height: 90%;
+	display: flex;
+	flex-direction: column;
+}
+  
+.rotate90 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+  transform-origin: center center;
+  margin-left: -8vw;
+}
+
+.rightRoadmap {
+	width: 15vw;
+	max-height: 100vh;
+	font-family: AvenirNextLTPro-Heavy;
+	color: #E9E9E9;
+	font-size: 10vw;
+	line-height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.rotate270 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(270deg);
+  transform-origin: center center;
+  margin-right: -8vw;
+}
+
+/* INDEX STYLES */
+
+.mainWrapper {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.Center {
+	width: 70vw;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.flavorText {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: #382E61;
+	font-family: "AvenirNextLTPro-Demi";
+	font-style: italic;
+	font-size: 2.5vw;
+}
+
+.featured {
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: #382E61;
+	font-family: "AvenirNextLTPro-Medium";
+	font-size: 2.5vw;
+	opacity: 50%;
+	margin-bottom: 50px;
+}
+
+.workContainer {
+	display: flex;
+	justify-content: center;
+	background: #E7E7E7;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #382E61;
+	margin-top: 80px;
+	margin-bottom: 140px;
+	-webkit-transition: all 0.5s ease;
+}
+
+.workContainer:hover {
+	transform: scale(1.1);
+}
+
+.rowReverse {
+	flex-direction: row-reverse;
+}
+
+.textHolder {
+	margin-left: 20px;
+}
+
+.imgContainer {
+	width: 40%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.featuredTitle {
+	font-family: "AvenirNextLTPro-Demi";
+	font-size: 35px;
+	margin-top: 25px;
+}
+
+.featuredSubtitle {
+	font-family: "AvenirNextLTPro-Medium";
+	font-style: italic;
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+.featuredInfo {
+	font-family: "AvenirNext-UltraLight";
+}
+
+.gradientOffsetLeft {
+	margin-left: -5vw;
+	width: 115%;
+}
+
+.gradientOffsetRight {
+	margin-right: -5vw;
+	width: 115%;
+}
+
+.alignRight {
+	text-align: right;
+	margin-left: 0px;
+	margin-right: 70px;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-color {
+  border-image-source: linear-gradient(to left, #6547A7, #BE427D, #E99468);
+}
+
+.borderOffsetTop {
+	padding-top: 15px;
+	padding-left: 15px;
+	margin-top: -30px;
+	margin-left: -50px;
+}
+
+.borderOffsetBottom {
+	padding-bottom: 15px;
+	padding-right: 55px;
+	margin-bottom: -30px;
+	margin-right: -30px;
+}
+
+.imgOffset {
+	padding: 15px;
+}
+
+.footer {
+	margin-top: 50px;
+	font-family: "AvenirNextLTPro-Medium";
+	font-style: italic;
+	font-size: 20px;
+	color: #382E61;
+}
+
+.contactInfo {
+	display: flex;
+	flex-direction: column;
+	text-align: end;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.margin15 {
+	margin-top: 7.5px;
+	margin-bottom: 7.5px;
+}
+
+
+/* WORK STYLES */
+
+
+/* Child's Play */
+
+.emptySpace {
+	height: 5vh;
+}
+
+.video {
+	height: 315px;
+	width: 560px;
+	justify-self: center; 
+		background: #E7E7E7;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+.projectTitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #382E61;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	box-sizing: border-box;
+}
+
+.imageGallery {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.image {
+	margin: 20px;
 }

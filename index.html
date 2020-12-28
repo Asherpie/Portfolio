@@ -2,16 +2,193 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Index</title>
+<title>Home</title>
 <link href="asherpie.css" rel="stylesheet" type="text/css">
 </head>
 	
 <!-- https://asherpie.github.io/Portfolio/ -->
 
 <body>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
 	
-	<div class="test">
-	Ashley's Portfolio YEEEEET!!!!
+    <ul id="menu" class="border-gradient border-gradient-color">
+		
+		<div class="border-gradient border-gradient-color navMargin">
+		<div class="navOffset">
+	
+      <a href="#" class="parentmenu"><li>Work  <i class="arrow down"></i></li></a>
+		<ul class="submenu">
+			<li><a href="childsPlay.html">Child's Play</a></li>
+			<li><a href="magmaGems.html">Magma Gems</a></li>
+			<li><a href="shorts.html">Animated Shorts</a></li>
+			<li><a href="storyboards.html">StoryBoards and Reels</a></li>
+			<li><a href="unreal.html">Unreal Code</a></li>
+			<li><a href="models.html">3D Modeling</a></li>
+			<li><a href="rigs.html">Rigging</a></li>
+		</ul>
+      <a href="about.html"><li>About</li></a>
+			</div>
+			</div>
+    </ul>
+	
+  </div>
+</nav>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('arrow')[0];
+  if(sub.classList.contains('down')){
+      sub.classList.add("up");    
+      sub.classList.remove("down");
+  } else {
+      sub.classList.add("down");
+      sub.classList.remove("up");
+  }
+}, false);
+	
+</script>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('submenu')[0];
+  if(sub.classList.contains('subrollout')){
+      sub.classList.add("subrollin");    
+      sub.classList.remove("subrollout");
+  } else {
+      sub.classList.add("subrollout");
+      sub.classList.remove("subrollin");
+  }
+}, false);
+	
+</script>
+	
+	
+<!-- Fixed Roadmap Elements -->
+
+	<div class="roadmapwrapper">
+	
+		<div class="leftRoadmap">
+			<div class="rotate90">H</div>
+			<div class="rotate90">o</div>
+			<div class="rotate90">m</div>
+			<div class="rotate90">e</div>
+		</div>
+		<div class="centerContent">
+		</div>
+		<div class="rightRoadmap">
+			<div class="rotate270">e</div>
+			<div class="rotate270">m</div>
+			<div class="rotate270">o</div>
+			<div class="rotate270">H</div>
+		</div>
+	</div>
+	
+	<div class="mainWrapper">
+		<div class="Center">
+			
+			<div class="flavorText">Disciplined in the production pipeline from start to finish.
+			</div>
+			<div class="featured">Featured Work</div>
+			
+			<div class="featuredWork">
+				
+				<!-- featured 1 -->
+				<a href="childsPlay.html">
+				<div class="workContainer">
+					
+					<div class="imgContainer">
+						<div class="border-gradient border-gradient-color borderOffsetTop">
+						<div class="border-gradient border-gradient-color borderOffsetBottom">
+						<img class="imgOffset" src="
+						art assets/childsPlay/CP_featuredimg.png" alt="">
+						</div>
+						</div>
+					</div>
+					
+					<div class="textHolder">
+						<div class="featuredTitle">Child's Play</div>
+						<div class="gradient gradientOffsetLeft"></div>
+						<div class="featuredSubtitle">Production Lead / Story Artist / Lead Animator</div>
+						<br>
+						<div class="featuredInfo">here's where the cute little info about the piece will go :DDDDD</div>
+					</div>
+				</div>
+				</a>
+				
+				<!-- featured 2 -->
+				<a href="magmaGems.html">
+				<div class="workContainer rowReverse">
+					<div class="imgContainer">
+						<div class="border-gradient border-gradient-color borderOffsetTop">
+						<div class="border-gradient border-gradient-color borderOffsetBottom">
+						<img class="imgOffset" src="art assets/MagmaGems/gem_featureimg.png" alt="">
+						</div>
+						</div>
+					</div>
+					
+					<div class="textHolder alignRight">
+						<div class="featuredTitle">Magma Gems</div>
+						<div class="gradient gradientOffsetRight"></div>
+						<div class="featuredSubtitle">Crystal Designer / Unreal Material Creator</div>
+						<br>
+						<div class="featuredInfo">here's where the cute little info about the piece will go :DDDDD</div>
+					</div>
+				</div>
+				</a>
+				
+				<!-- featured 3 -->
+				<a href="shorts.html">
+				<div class="workContainer">
+					
+					<div class="imgContainer">
+						<div class="border-gradient border-gradient-color borderOffsetTop">
+						<div class="border-gradient border-gradient-color borderOffsetBottom">
+						<img class="imgOffset" src="art assets/animatedShorts/shorts_featureimg.png" alt="">
+						</div>
+						</div>
+					</div>
+					
+					<div class="textHolder">
+						<div class="featuredTitle">Animated Shorts</div>
+						<div class="gradient gradientOffsetLeft"></div>
+						<div class="featuredSubtitle">Maya / Flash / Nuke / After Effects</div>
+						<br>
+						<div class="featuredInfo">here's where the cute little info about the piece will go :DDDDD</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			
+			<div class="footer">
+				<div class="gradient"></div>
+				<div class="contactInfo">
+					<div class="margin15">Contact me!</div>
+					<div class="margin15">ahj3@g.clemson.edu</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="centerContent Header">
+		<div class="headTitle"><a href="index.html">Ashley Johnson</a></div>
+		<div class="gradient"></div>
+		<div class="headSubtitle">Animator . Designer . Programmer</div>
 	</div>
 	
 </body>
