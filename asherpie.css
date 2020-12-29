@@ -712,3 +712,7 @@ img {
 	text-align: center;
 	margin-top: 60px;
 }
+
+.link {
+	text-decoration-line: underline;
+}

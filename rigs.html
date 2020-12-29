@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rigging</title>
+<link href="asherpie.css" rel="stylesheet" type="text/css">
+</head>
+	
+<!-- https://asherpie.github.io/Portfolio/ -->
+
+<body>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+	
+    <ul id="menu" class="border-gradient border-gradient-color">
+		
+		<div class="border-gradient border-gradient-color navMargin">
+		<div class="navOffset">
+	
+      <a href="#" class="parentmenu"><li>Work  <i class="arrow down"></i></li></a>
+		<ul class="submenu">
+			<li><a href="childsPlay.html">Child's Play</a></li>
+			<li><a href="magmaGems.html">Magma Gems</a></li>
+			<li><a href="shorts.html">Animated Shorts</a></li>
+			<li><a href="rigs.html">Rigging</a></li>
+			<li><a href="storyboards.html">StoryBoards and Reels</a></li>
+			<li><a href="unreal.html">Unreal Code</a></li>
+			<li><a href="models.html">3D Modeling</a></li>
+		</ul>
+      <a href="about.html"><li>About</li></a>
+			</div>
+			</div>
+    </ul>
+	
+  </div>
+</nav>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('arrow')[0];
+  if(sub.classList.contains('down')){
+      sub.classList.add("up");    
+      sub.classList.remove("down");
+  } else {
+      sub.classList.add("down");
+      sub.classList.remove("up");
+  }
+}, false);
+	
+</script>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('submenu')[0];
+  if(sub.classList.contains('subrollout')){
+      sub.classList.add("subrollin");    
+      sub.classList.remove("subrollout");
+  } else {
+      sub.classList.add("subrollout");
+      sub.classList.remove("subrollin");
+  }
+}, false);
+	
+</script>
+	
+	
+<!-- Fixed Roadmap Elements -->
+
+	<div class="roadmapwrapper">
+	
+		<div class="leftRoadmap">
+			<div class="rotate90">W</div>
+			<div class="rotate90">o</div>
+			<div class="rotate90">r</div>
+			<div class="rotate90">k</div>
+		</div>
+		<div class="centerContent">
+		</div>
+		<div class="rightRoadmap">
+			<div class="rotate270">k</div>
+			<div class="rotate270">r</div>
+			<div class="rotate270">o</div>
+			<div class="rotate270">W</div>
+		</div>
+	</div>
+	
+	<div class="mainWrapper">
+		<div class="Center">
+			
+			<!-- MAIN CONTENT GOES HERE BLIND ASS MOTHAFUCKA FUCKER -->
+			
+			<div class="emptySpace"></div>
+			
+			<div class="projectTitle">
+				<div class="featuredTitle">Rigging</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="flex bodyText">
+				<a href="https://www.turbosquid.com/3d-models/x-free/864961" class="link" target="_blank">Check out the model I used for this rig! This model was made by paultosca on TurboSquid.com</a> 
+			</div>
+			
+			<div class="flex">
+				<div class="imageGallery">
+					<div class="image" ><img src="art assets/Rig/controllers_view1.jpg" alt=""></div>
+				</div>
+			</div>
+			
+			<div class="flex">
+				<div class="imageGallery">
+					<div class="image"><img src="art assets/Rig/controllers_view2.jpg" alt=""></div>
+					<div class="image"><img src="art assets/Rig/controllers_view3.jpg" alt=""></div>
+				</div>
+			</div>
+			
+			<!-- Weight Painting -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Weight Painting</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/Rig/weight_paints_1.png" onclick="openModal();currentSlide(1)" alt="">
+					<div class="headSubtitle margin15">Weight painting the exterior armor was an interestering challenge as the metals had to be stiff without the underlying mesh clipping through</div>
+				</div>
+				<div class="image"><img src="art assets/Rig/weight_paints_2.png" onclick="openModal();currentSlide(2)" alt="">
+					<div class="headSubtitle margin15">The collar was the most challenging part as it required a lot of fine tuning the weights between the various joints</div>
+				</div>
+				<div class="image"><img src="art assets/Rig/weight_paints_3.png" onclick="openModal();currentSlide(3)" alt="">
+					<div class="headSubtitle margin15">Weight painting the center of gravity</div>
+				</div>
+				
+			</div>
+			
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="art assets/Rig/weight_paints_1.png" onclick="openModal();currentSlide(1)" alt="" style="max-height: 70vh">
+    </div>
+
+    <div class="mySlides">
+      <img src="art assets/Rig/weight_paints_2.png" style="max-height: 70vh">
+    </div>
+    
+	<div class="mySlides">
+      <img src="art assets/Rig/weight_paints_3.png" style="max-height: 70vh">
+    </div>
+	  
+    <div class="mySlides">
+      <img src="art assets/Rig/hand_attributes.png"  style="max-height: 70vh">
+    </div>
+    
+	  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption" class="featuredSubtitle"></p>
+    </div>
+	  
+    <div class="column">
+      <img class="demo cursor" src="art assets/Rig/weight_paints_1.png" onclick="openModal();currentSlide(1)" alt="Weight painting the exterior armor was an interestering challenge as the metals had to be stiff without the underlying mesh clipping through">
+	  
+      <img class="demo cursor" src="art assets/Rig/weight_paints_2.png"  onclick="currentSlide(2)" alt="The collar was the most challenging part as it required a lot of fine tuning the weights between the various joints">
+		
+      <img class="demo cursor" src="art assets/Rig/weight_paints_3.png"  onclick="currentSlide(3)" alt="Weight painting the center of gravity">
+	  
+      <img class="demo cursor" src="art assets/Rig/hand_attributes.png"   onclick="currentSlide(4)" alt="Driven keys for each finger for fine tuned animation">
+		
+
+    </div>
+	  
+  </div>
+</div>
+			
+			<!-- Driven Keys -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Setting Driven Keys</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image">
+					<iframe class="video" src="https://www.youtube.com/embed/V_Hydkeb5As" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div class="flex bodyText" style="margin-bottom: 60px">
+			<div>I built the rig using a combination of 3 rigs; an IK, FK, and blend rig. The blend rig uses a set of driven keys to switch between the FK and IK rigs for greater control.</div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image">
+					<iframe class="video" src="https://www.youtube.com/embed/MKYJ65z4uuQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="headSubtitle margin15">Animating the finger controls</div>
+				</div>
+				<div class="image"><img src="art assets/Rig/hand_attributes.png" onclick="openModal();currentSlide(4)" alt="">
+					<div class="headSubtitle margin15">Driven keys for each finger for fine tuned animation</div>
+				</div>
+			</div>
+			
+		<!-- Final Render -->
+			
+		<div class="projectTitle">
+			<div class="featuredSubtitle">Demo Animations</div>
+			<div class="gradient"></div>
+		</div>
+			
+		
+			<div class="flex">
+				<iframe class="video " src="https://www.youtube.com/embed/Ao_GwZc5Lks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<div class="flex bodyText margin15" style="margin-bottom: 60px">The eyes are rigged to follow a separate controller</div>
+			
+			<div class="flex margin15">
+				<iframe class="video " src="https://www.youtube.com/embed/rj0cUb-4i-Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<div class="flex bodyText">In order to rig the sword, I have two meshes; one parented to the hilt while the other is parented to the hand</div>
+		
+			
+			<div class="footer">
+				<div class="gradient"></div>
+				<div class="contactInfo">
+					<div class="margin15">Contact me!</div>
+					<div class="margin15">ahj3@clemson.edu</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="centerContent Header">
+		<div class="headTitle"><a href="index.html">Ashley Johnson</a></div>
+		<div class="gradient"></div>
+		<div class="headSubtitle">Animator . Designer . Programmer</div>
+	</div>
+	
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+</body>
+</html>
