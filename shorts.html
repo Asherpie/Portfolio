@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Magma Gems</title>
+<link href="asherpie.css" rel="stylesheet" type="text/css">
+</head>
+	
+<!-- https://asherpie.github.io/Portfolio/ -->
+
+<body>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+	
+    <ul id="menu" class="border-gradient border-gradient-color">
+		
+		<div class="border-gradient border-gradient-color navMargin">
+		<div class="navOffset">
+	
+      <a href="#" class="parentmenu"><li>Work  <i class="arrow down"></i></li></a>
+		<ul class="submenu">
+			<li><a href="childsPlay.html">Child's Play</a></li>
+			<li><a href="magmaGems.html">Magma Gems</a></li>
+			<li><a href="shorts.html">Animated Shorts</a></li>
+			<li><a href="storyboards.html">StoryBoards and Reels</a></li>
+			<li><a href="unreal.html">Unreal Code</a></li>
+			<li><a href="models.html">3D Modeling</a></li>
+			<li><a href="rigs.html">Rigging</a></li>
+		</ul>
+      <a href="about.html"><li>About</li></a>
+			</div>
+			</div>
+    </ul>
+	
+  </div>
+</nav>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('arrow')[0];
+  if(sub.classList.contains('down')){
+      sub.classList.add("up");    
+      sub.classList.remove("down");
+  } else {
+      sub.classList.add("down");
+      sub.classList.remove("up");
+  }
+}, false);
+	
+</script>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('submenu')[0];
+  if(sub.classList.contains('subrollout')){
+      sub.classList.add("subrollin");    
+      sub.classList.remove("subrollout");
+  } else {
+      sub.classList.add("subrollout");
+      sub.classList.remove("subrollin");
+  }
+}, false);
+	
+</script>
+	
+	
+<!-- Fixed Roadmap Elements -->
+
+	<div class="roadmapwrapper">
+	
+		<div class="leftRoadmap">
+			<div class="rotate90">W</div>
+			<div class="rotate90">o</div>
+			<div class="rotate90">r</div>
+			<div class="rotate90">k</div>
+		</div>
+		<div class="centerContent">
+		</div>
+		<div class="rightRoadmap">
+			<div class="rotate270">k</div>
+			<div class="rotate270">r</div>
+			<div class="rotate270">o</div>
+			<div class="rotate270">W</div>
+		</div>
+	</div>
+	
+	<div class="mainWrapper">
+		<div class="Center">
+			
+			<!-- MAIN CONTENT GOES HERE BLIND ASS MOTHAFUCKA FUCKER -->
+			
+			<div class="emptySpace"></div>
+			
+			<div class="projectTitle">
+				<div class="featuredTitle">Magma Gems</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="flex">
+				<iframe class="video" src="https://www.youtube.com/embed/XQtT6LCvFL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<div class="flex bodyText">
+				
+			</div>
+			
+			<!-- Substance Designer -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Part 1 : Creating a Substance Using Substance Designer</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/MagmaGems/progress imgs/substanceDesigner_1.png" onclick="openModal();currentSlide(1)" alt="">
+					<div class="headSubtitle margin15">Using various noise textures to create a rock-like pattern</div>
+				</div>
+				
+				<div class="image"><img src="art assets/MagmaGems/progress imgs/substanceDesigner_2.png" onclick="openModal();currentSlide(2)" alt="">
+				<div class="headSubtitle margin15">Accentuating the existing veining for coloring in Unreal</div></div>
+			</div>
+			
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="art assets/MagmaGems/progress imgs/substanceDesigner_1.png" alt="" style="max-height: 70vh">
+    </div>
+
+    <div class="mySlides">
+      <img src="art assets/MagmaGems/progress imgs/substanceDesigner_2.png" style="max-height: 70vh">
+    </div>
+    
+	<div class="mySlides">
+      <img src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.36.29 PM.png" style="max-height: 70vh">
+    </div>
+	  
+    <div class="mySlides">
+      <img src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.36.47 PM.png" style="max-height: 70vh">
+    </div>
+    
+	<div class="mySlides">
+      <img src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.37.15 PM.png" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/MagmaGems/finalView.png" style="max-height: 70vh">
+    </div>
+	  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption" class="featuredSubtitle"></p>
+    </div>
+	  
+    <div class="column">
+      <img class="demo cursor" src="art assets/MagmaGems/progress imgs/substanceDesigner_1.png"  onclick="currentSlide(1)" alt="Using various noise textures to create a rock-like pattern">
+	  
+      <img class="demo cursor" src="art assets/MagmaGems/progress imgs/substanceDesigner_2.png"  onclick="currentSlide(2)" alt="Accentuating the existing veining for coloring in Unreal">
+		
+      <img class="demo cursor" src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.36.29 PM.png"  onclick="currentSlide(3)" alt="The entire node tree in Unreal">
+	  
+      <img class="demo cursor" src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.36.47 PM.png"  onclick="currentSlide(4)" alt="The BumpOffset node was used to push the interior facets texture deeper in the mesh.">
+		
+      <img class="demo cursor" src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.37.15 PM.png"  onclick="currentSlide(5)" alt="Using the original texture, I masked out areas that would give the appearence of magma encrusted on the exterior of the crystal">
+		
+	 <img class="demo cursor" src="art assets/MagmaGems/finalView.png" onclick="currentSlide(6)" alt="The Final Render">
+    </div>
+	  
+  </div>
+</div>
+			
+			<!-- Building in Unreal -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Part 2 : Building the texture in Unreal</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.36.29 PM.png" onclick="openModal();currentSlide(3)" alt="">
+					<div class="headSubtitle margin15">The entire node tree in Unreal</div>
+				</div>
+				
+				<div class="image"><img src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.36.47 PM.png" onclick="openModal();currentSlide(4)" alt="">
+				<div class="headSubtitle margin15">The BumpOffset node was used to push the interior facets texture deeper in the mesh.</div></div>
+				
+				<div class="image"><img src="art assets/MagmaGems/Screen Shot 2020-12-28 at 5.37.15 PM.png" onclick="openModal();currentSlide(5)" alt="">
+				<div class="headSubtitle margin15">Using the original texture, I masked out areas that would give the appearence of magma "encrusted" on the exterior of the crystal</div></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image width30">
+					<video autoplay muted loop class="videosettings" >
+		 			<source src="art assets/MagmaGems/progress imgs/gem_2.mp4" type="video/webm"></video></div>
+				<div class="image width30">
+					<video autoplay muted loop class="videosettings" >
+		 			<source src="art assets/MagmaGems/progress imgs/Screen Recording 2020-12-06 at 1.43.00 AM.mov" type="video/webm"></video></div>
+				<div class="image width30">
+					<video autoplay muted loop class="videosettings" >
+		 			<source src="art assets/MagmaGems/progress imgs/gem_3.mp4" type="video/webm"></video></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image">
+					<img src="art assets/MagmaGems/pinkGemDetail.gif" alt="">
+				</div>
+			<div class="image">
+		 			<img source src="art assets/MagmaGems/blueGemDetail.gif">
+				</div>
+			</div>
+			
+		<!-- Final Render -->
+			
+		<div class="projectTitle">
+			<div class="featuredSubtitle">Final Render</div>
+			<div class="gradient"></div>
+		</div>
+			
+		<div class="imageGallery">
+			<div class="image" style="width: 70%"><img src="art assets/MagmaGems/finalView.png" onclick="openModal();currentSlide(6)" alt="">
+			</div>
+		</div>
+			
+			<div class="footer">
+				<div class="gradient"></div>
+				<div class="contactInfo">
+					<div class="margin15">Contact me!</div>
+					<div class="margin15">ahj3@g.clemson.edu</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="centerContent Header">
+		<div class="headTitle"><a href="index.html">Ashley Johnson</a></div>
+		<div class="gradient"></div>
+		<div class="headSubtitle">Animator . Designer . Programmer</div>
+	</div>
+	
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+</body>
+</html>
