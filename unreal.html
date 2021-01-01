@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Unreal Code</title>
+<link href="asherpie.css" rel="stylesheet" type="text/css">
+</head>
+	
+<!-- https://asherpie.github.io/Portfolio/ -->
+
+<body>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+	
+    <ul id="menu" class="border-gradient border-gradient-color">
+		
+		<div class="border-gradient border-gradient-color navMargin">
+		<div class="navOffset">
+	
+      <a href="#" class="parentmenu"><li>Work  <i class="arrow down"></i></li></a>
+		<ul class="submenu">
+			<li><a href="childsPlay.html">Child's Play</a></li>
+			<li><a href="magmaGems.html">Magma Gems</a></li>
+			<li><a href="shorts.html">Animated Shorts</a></li>
+			<li><a href="rigs.html">Rigging</a></li>
+			<li><a href="storyboards.html">StoryBoards and Reels</a></li>
+			<li><a href="unreal.html">Unreal Code</a></li>
+			<li><a href="models.html">3D Modeling</a></li>
+		</ul>
+      <a href="about.html"><li>About</li></a>
+			</div>
+			</div>
+    </ul>
+	
+  </div>
+</nav>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('arrow')[0];
+  if(sub.classList.contains('down')){
+      sub.classList.add("up");    
+      sub.classList.remove("down");
+  } else {
+      sub.classList.add("down");
+      sub.classList.remove("up");
+  }
+}, false);
+	
+</script>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('submenu')[0];
+  if(sub.classList.contains('subrollout')){
+      sub.classList.add("subrollin");    
+      sub.classList.remove("subrollout");
+  } else {
+      sub.classList.add("subrollout");
+      sub.classList.remove("subrollin");
+  }
+}, false);
+	
+</script>
+	
+	
+<!-- Fixed Roadmap Elements -->
+
+	<div class="roadmapwrapper">
+	
+		<div class="leftRoadmap">
+			<div class="rotate90">W</div>
+			<div class="rotate90">o</div>
+			<div class="rotate90">r</div>
+			<div class="rotate90">k</div>
+		</div>
+		<div class="centerContent">
+		</div>
+		<div class="rightRoadmap">
+			<div class="rotate270">k</div>
+			<div class="rotate270">r</div>
+			<div class="rotate270">o</div>
+			<div class="rotate270">W</div>
+		</div>
+	</div>
+	
+	<div class="mainWrapper">
+		<div class="Center">
+			
+			<!-- MAIN CONTENT GOES HERE BLIND ASS MOTHAFUCKA FUCKER -->
+			
+			<div class="emptySpace"></div>
+			
+			<div class="projectTitle">
+				<div class="featuredTitle">Unreal Code</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="flex">
+				<iframe class="video" src="https://www.youtube.com/embed/YAnkxVwtHlo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<div class="flex bodyText">
+				In order to further my C++ and Unreal 4 knowledge, I followed a Pluralsight tutorial to build a replica of Pong. While the tutorial was very informative, I quickly learned that I would have to research solutions to my compiling errors as the instructor was using an older version of the engine. Through this process I became very familiar with the Unreal Engine documentation and how to comb through the plethora of information to find the answers I needed. 
+			</div>
+			
+			<!-- Substance Designer -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Part 1 : Creating Custom C++ Files</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.50 PM.png" onclick="openModal();currentSlide(1)" alt="">
+					<div class="headSubtitle margin15">Coding a  game mode and adding custom BluePrint properties</div>
+				</div>
+				
+				<div class="image"><img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.32 PM.png" onclick="openModal();currentSlide(2)" alt="">
+				<div class="headSubtitle margin15">Setting up the goal boundaries</div></div>
+				
+				<div class="image"><img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.07 PM.png" onclick="openModal();currentSlide(3)" alt="">
+				<div class="headSubtitle margin15">The ball actor and it's collision checks</div></div>
+				
+				<div class="image"><img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.36.14 PM.png" onclick="openModal();currentSlide(4)" alt="">
+				<div class="headSubtitle margin15">Lastly the paddle which will be used by the player and AI</div></div>
+			</div>
+			
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.50 PM.png" alt="" style="max-height: 70vh">
+    </div>
+
+    <div class="mySlides">
+      <img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.32 PM.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.07 PM.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.36.14 PM.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/UnrealGame/raw imgs/better than sex organization.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/UnrealGame/raw imgs/setting the last nodes.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/UnrealGame/raw imgs/Making key bindings for player.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/UnrealGame/raw imgs/working in the viewport for the first time.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+	<div class="mySlides">
+      <img src="art assets/UnrealGame/raw imgs/finally getting paddles in after hours of struggle.png" alt="" style="max-height: 70vh">
+    </div>
+	  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption" class="featuredSubtitle"></p>
+    </div>
+	  
+    <div class="column">
+      <img class="demo cursor" src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.50 PM.png"  onclick="currentSlide(1)" alt="Coding a  game mode and adding custom BluePrint properties">
+	  
+      <img class="demo cursor" src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.32 PM.png"  onclick="currentSlide(2)" alt="Setting up the goal boundaries">
+		
+	<img class="demo cursor" src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.37.07 PM.png"  onclick="currentSlide(3)" alt="The ball actor and it's collision checks">
+		
+	<img class="demo cursor" src="art assets/UnrealGame/Screen Shot 2020-01-15 at 2.36.14 PM.png"  onclick="currentSlide(4)" alt="Lastly the paddle which will be used by the player and AI">
+		
+	<img class="demo cursor" src="art assets/UnrealGame/raw imgs/better than sex organization.png"  onclick="currentSlide(5)" alt="Setting the collision attributes for the ball">
+		
+	<img class="demo cursor" src="art assets/UnrealGame/raw imgs/setting the last nodes.png"  onclick="currentSlide(6)" alt="Setting up the AI paddle with custom blueprint">
+		
+	<img class="demo cursor" src="art assets/UnrealGame/raw imgs/Making key bindings for player.png"  onclick="currentSlide(7)" alt="Making keybindings for the player">
+		
+	<img class="demo cursor" src="art assets/UnrealGame/raw imgs/working in the viewport for the first time.png"  onclick="currentSlide(8)" alt="Placing the ball on the 2D plane of the game">
+		
+	<img class="demo cursor" src="art assets/UnrealGame/raw imgs/finally getting paddles in after hours of struggle.png"  onclick="currentSlide(9)" alt="Placing both a Player and AI paddle instance">
+    </div>
+	  
+  </div>
+</div>
+			
+			<!-- Building in Unreal -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Part 2 : Working with BluePrints and Custom Inputs</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/UnrealGame/raw imgs/better than sex organization.png" onclick="openModal();currentSlide(5)" alt="">
+					<div class="headSubtitle margin15">Setting the collision attributes for the ball</div>
+				</div>
+				
+				<div class="image"><img src="art assets/UnrealGame/raw imgs/setting the last nodes.png" onclick="openModal();currentSlide(6)" alt="">
+				<div class="headSubtitle margin15">Setting up the AI paddle with custom blueprint</div></div>
+				
+				<div class="image"><img src="art assets/UnrealGame/raw imgs/Making key bindings for player.png" onclick="openModal();currentSlide(7)" alt="">
+				<div class="headSubtitle margin15">Making keybindings for the player</div></div>
+			</div>
+			
+		<!-- Setting the Actors in the viewport -->
+			
+		<div class="projectTitle">
+			<div class="featuredSubtitle">Part 3 : Setting the Actors in the Viewport</div>
+			<div class="gradient"></div>
+		</div>
+			
+		<div class="imageGallery">
+			<div class="image"><img src="art assets/UnrealGame/raw imgs/working in the viewport for the first time.png" onclick="openModal();currentSlide(8)" alt=""><div class="headSubtitle margin15">Placing the ball on the 2D plane of the game</div></div>
+			
+			<div class="image"><img src="art assets/UnrealGame/raw imgs/finally getting paddles in after hours of struggle.png" onclick="openModal();currentSlide(9)" alt=""><div class="headSubtitle margin15">Placing both a Player and AI paddle instance</div></div>
+		</div>
+			
+			<div class="footer">
+				<div class="gradient"></div>
+				<div class="contactInfo">
+					<div class="margin15">Contact me!</div>
+					<div class="margin15">ahj3@clemson.edu</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="centerContent Header">
+		<div class="headTitle"><a href="index.html">Ashley Johnson</a></div>
+		<div class="gradient"></div>
+		<div class="headSubtitle">Animator . Designer . Programmer</div>
+	</div>
+	
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+</body>
+</html>
