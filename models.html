@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3D Modeling</title>
+<link href="asherpie.css" rel="stylesheet" type="text/css">
+</head>
+	
+<!-- https://asherpie.github.io/Portfolio/ -->
+
+<body>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+	
+    <ul id="menu" class="border-gradient border-gradient-color">
+		
+		<div class="border-gradient border-gradient-color navMargin">
+		<div class="navOffset">
+	
+      <a href="#" class="parentmenu"><li>Work  <i class="arrow down"></i></li></a>
+		<ul class="submenu">
+			<li><a href="childsPlay.html">Child's Play</a></li>
+			<li><a href="magmaGems.html">Magma Gems</a></li>
+			<li><a href="shorts.html">Animated Shorts</a></li>
+			<li><a href="rigs.html">Rigging</a></li>
+			<li><a href="unreal.html">Unreal Code</a></li>
+			<li><a href="models.html">3D Modeling</a></li>
+		</ul>
+      <a href="about.html"><li>About</li></a>
+			</div>
+			</div>
+    </ul>
+	
+  </div>
+</nav>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('arrow')[0];
+  if(sub.classList.contains('down')){
+      sub.classList.add("up");    
+      sub.classList.remove("down");
+  } else {
+      sub.classList.add("down");
+      sub.classList.remove("up");
+  }
+}, false);
+	
+</script>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('submenu')[0];
+  if(sub.classList.contains('subrollout')){
+      sub.classList.add("subrollin");    
+      sub.classList.remove("subrollout");
+  } else {
+      sub.classList.add("subrollout");
+      sub.classList.remove("subrollin");
+  }
+}, false);
+	
+</script>
+	
+	
+<!-- Fixed Roadmap Elements -->
+
+	<div class="roadmapwrapper">
+	
+		<div class="leftRoadmap">
+			<div class="rotate90">W</div>
+			<div class="rotate90">o</div>
+			<div class="rotate90">r</div>
+			<div class="rotate90">k</div>
+		</div>
+		<div class="centerContent">
+		</div>
+		<div class="rightRoadmap">
+			<div class="rotate270">k</div>
+			<div class="rotate270">r</div>
+			<div class="rotate270">o</div>
+			<div class="rotate270">W</div>
+		</div>
+	</div>
+	
+	<div class="mainWrapper">
+		<div class="Center">
+			
+			<!-- MAIN CONTENT GOES HERE BLIND ASS MOTHAFUCKA FUCKER -->
+			
+			<div class="emptySpace"></div>
+			
+			<div class="projectTitle">
+				<div class="featuredTitle">3D Modeling</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="flex bodyText">
+				I have experience in all facets of the 3D pipeline from modeling, script writing, rigging, and animating to surfacing, texturing, and rendering. I have also used various software that allows for more polished work outside of the native Maya package. Some examples include RenderMan, Substance Designer and Painter, Unreal Engine 4, and Nuke. 
+			</div>
+			
+			
+			<!-- RenderMan Still Life -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">RenderMan Still Life</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/3DModeling/rendermanRender.jpg" onclick="openModal();currentSlide(1)" alt="">
+					<div class="headSubtitle margin15">To further explore photo-realistic rendering, I modeled a few quick objects to play around with Pixar's RenderMan</div>
+				</div>
+				
+				<div class="image"><img src= onclick="openModal();currentSlide(2)" alt="">
+				<div class="headSubtitle margin15">PxrSurface materials offer a plethora of rendering possabilities, and I enjoyed reading through the official RenderMan documentation</div></div>
+				
+				
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/3DModeling/Screen Shot 2021-01-01 at 1.55.59 AM.png" onclick="openModal();currentSlide(3)" alt="">
+				<div class="headSubtitle margin15">Lighting setup with Pixar lights</div></div>
+				
+				<div class="image"><img src="art assets/3DModeling/Screen Shot 2021-01-01 at 1.56.55 AM.png" onclick="openModal();currentSlide(4)" alt="">
+				<div class="headSubtitle margin15">Full shot of scene with cube using Pixar volumetric surface for fog/dust displacement</div></div>
+			</div>
+			
+			<!-- Dinosaur -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Dinosaur</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/3DModeling/dino_quarterview.jpg" onclick="openModal();currentSlide(5)" alt="">
+					<div class="headSubtitle margin15">Low poly smooth model</div>
+				</div>
+				
+				<div class="image"><img src="art assets/3DModeling/dino_edgeflowview.jpg" onclick="openModal();currentSlide(6)" alt="">
+				<div class="headSubtitle margin15">Edgeflow shot</div></div>
+				
+				<div class="image"><img src="art assets/3DModeling/dino_detailview.jpg" onclick="openModal();currentSlide(7)" alt="">
+				<div class="headSubtitle margin15">Detail shot</div></div>
+			</div>
+			
+			<!-- Robot -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Robot</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/3DModeling/Johnson_Ashley_robot_scshot_01.jpg" onclick="openModal();currentSlide(8)" alt="">
+					<div class="headSubtitle margin15">Using basic geometry and primitives was key to keeping the model low poly</div>
+				</div>
+				
+				<div class="image"><img src="art assets/3DModeling/Johnson_Ashley_robot_scshot_02.jpg" onclick="openModal();currentSlide(9)" alt="">
+				<div class="headSubtitle margin15">This allowed me to keep the face count very low</div></div>
+				
+				<div class="image"><img src="art assets/3DModeling/Johnson_Ashley_robot_scshot_03.jpg" onclick="openModal();currentSlide(10)" alt="">
+				<div class="headSubtitle margin15">Despite the low poly limitation I was able to achieve a fully fleshed form</div></div>
+			</div>
+			
+			<!-- Bathroom -->
+			
+			<div class="projectTitle">
+				<div class="featuredSubtitle">Bathroom Scene</div>
+				<div class="gradient"></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view1.jpg" onclick="openModal();currentSlide(11)" alt="">
+					<div class="headSubtitle margin15">For this piece I wanted to recreate realistic lighting through a stained glass bathroom window</div>
+				</div>
+				
+				<div class="image"><img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view2.jpg" onclick="openModal();currentSlide(12)" alt="">
+				<div class="headSubtitle margin15">I modeled everything in the scene from scratch and textured them using Arnold surfaces</div></div>
+				
+				<div class="image"><img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view3.jpg" onclick="openModal();currentSlide(13)" alt="">
+				<div class="headSubtitle margin15">The window took the longest, as I had to recreate the interior metal work with curves and extrude cylinders along them</div></div>
+			</div>
+			
+			<div class="imageGallery">
+				<div class="image"><img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view6.jpg" onclick="openModal();currentSlide(14)" alt="">
+					<div class="headSubtitle margin15"></div>
+				</div>
+				
+				<div class="image"><img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view10.jpg" onclick="openModal();currentSlide(15)" alt="">
+				<div class="headSubtitle margin15">I used about 7 lights to fully flesh out the 'sun' and it's highlights</div></div>
+				
+				<div class="image"><img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view5.jpg" onclick="openModal();currentSlide(16)" alt="">
+				<div class="headSubtitle margin15">Scene setup</div></div>
+				
+				<div class="image"><img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_Scene_lightsetup.png" onclick="openModal();currentSlide(17)" alt="">
+				<div class="headSubtitle margin15">Lighting setup</div></div>
+			</div>
+			
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="art assets/3DModeling/rendermanRender.jpg" onclick="openModal();currentSlide(1)" alt="" style="max-height: 70vh">
+	</div>	
+	
+	<div class="mySlides"> 
+	  <img src= onclick="openModal();currentSlide(2)" alt="" style="max-height: 70vh">
+	</div> 	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/Screen Shot 2021-01-01 at 1.55.59 AM.png" onclick="openModal();currentSlide(3)" alt="" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/Screen Shot 2021-01-01 at 1.56.55 AM.png" onclick="openModal();currentSlide(4)" alt="" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/dino_quarterview.jpg" alt="" onclick="openModal();currentSlide(5)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	 <img src="art assets/3DModeling/dino_edgeflowview.jpg" onclick="openModal();currentSlide(6)" alt="" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/dino_detailview.jpg" alt="" onclick="openModal();currentSlide(7)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/Johnson_Ashley_robot_scshot_01.jpg" alt="" onclick="openModal();currentSlide(8)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+      <img src="art assets/3DModeling/Johnson_Ashley_robot_scshot_02.jpg" alt="" onclick="openModal();currentSlide(9)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/Johnson_Ashley_robot_scshot_03.jpg" alt="" onclick="openModal();currentSlide(10)" style="max-height: 70vh">
+	</div>
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view1.jpg" alt="" onclick="openModal();currentSlide(11)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view2.jpg" alt="" onclick="openModal();currentSlide(12)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view3.jpg" alt="" onclick="openModal();currentSlide(13)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view6.jpg" alt="" onclick="openModal();currentSlide(14)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view10.jpg" alt="" onclick="openModal();currentSlide(15)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	 <img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view5.jpg" alt="" onclick="openModal();currentSlide(16)" style="max-height: 70vh">
+	</div>	
+	<div class="mySlides">
+	  <img src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_Scene_lightsetup.png" alt="" onclick="openModal();currentSlide(17)" style="max-height: 70vh">
+	</div>  
+    </div>
+
+    
+	  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption" class="featuredSubtitle"></p>
+    </div>
+	  
+    <div class="column smallHeight">
+      <img class="demo cursor" src="art assets/3DModeling/rendermanRender.jpg" onclick="currentSlide(1)" alt="To further explore photo-realistic rendering, I modeled a few quick objects to play around with Pixar's RenderMan">
+	  
+      <img class="demo cursor" src=  onclick="currentSlide(2)" alt="PxrSurface materials offer a plethora of rendering possabilities, and I enjoyed reading through the official RenderMan documentation">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/Screen Shot 2021-01-01 at 1.55.59 AM.png"  onclick="currentSlide(3)" alt="Lighting setup with Pixar lights">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/Screen Shot 2021-01-01 at 1.56.55 AM.png"  onclick="currentSlide(4)" alt="Full shot of scene with cube using Pixar volumetric surface for fog/dust displacement">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/dino_quarterview.jpg"  onclick="currentSlide(5)" alt="Low poly smooth model">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/dino_edgeflowview.jpg"  onclick="currentSlide(6)" alt="Edgeflow shot">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/dino_detailview.jpg"  onclick="currentSlide(7)" alt="Detail shot">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/Johnson_Ashley_robot_scshot_01.jpg"  onclick="currentSlide(8)" alt="Using basic geometry and primitives was key to keeping the model low poly">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/Johnson_Ashley_robot_scshot_02.jpg"  onclick="currentSlide(9)" alt="This allowed me to keep the face count very low">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/Johnson_Ashley_robot_scshot_03.jpg"  onclick="currentSlide(10)" alt="Despite the low poly limitation I was able to achieve a fully fleshed form">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view1.jpg"  onclick="currentSlide(11)" alt="For this piece I wanted to recreate realistic lighting through a stained glass bathroom window">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view2.jpg"  onclick="currentSlide(12)" alt="I modeled everything in the scene from scratch and textured them using Arnold surfaces">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view3.jpg" onclick="currentSlide(13)" alt="The window took the longest, as I had to recreate the interior metal work with curves and extrude cylinders along them">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view6.jpg"  onclick="currentSlide(14)" alt="">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view10.jpg"  onclick="currentSlide(15)" alt="I used about 7 lights to fully flesh out the 'sun' and it's highlights">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_scene_view5.jpg"  onclick="currentSlide(16)" alt="Scene setup">
+	  
+      <img class="demo cursor" src="art assets/3DModeling/bathroomImgs/Johnson_Ashley_Scene_lightsetup.png"  onclick="currentSlide(17)" alt="Lighting setup">
+    </div>
+  </div>
+</div>
+			
+			
+			
+			<div class="footer">
+				<div class="gradient"></div>
+				<div class="contactInfo">
+					<div class="margin15">Contact me!</div>
+					<div class="margin15">ahj3@clemson.edu</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="centerContent Header">
+		<div class="headTitle"><a href="index.html">Ashley Johnson</a></div>
+		<div class="gradient"></div>
+		<div class="headSubtitle">Animator . Designer . Programmer</div>
+	</div>
+	
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+</body>
+</html>

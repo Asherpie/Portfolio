@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<link href="asherpie.css" rel="stylesheet" type="text/css">
+</head>
+	
+<!-- https://asherpie.github.io/Portfolio/ -->
+
+<body>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+	
+    <ul id="menu" class="border-gradient border-gradient-color">
+		
+		<div class="border-gradient border-gradient-color navMargin">
+		<div class="navOffset">
+	
+      <a href="#" class="parentmenu"><li>Work  <i class="arrow down"></i></li></a>
+		<ul class="submenu">
+			<li><a href="childsPlay.html">Child's Play</a></li>
+			<li><a href="magmaGems.html">Magma Gems</a></li>
+			<li><a href="shorts.html">Animated Shorts</a></li>
+			<li><a href="rigs.html">Rigging</a></li>
+			<li><a href="unreal.html">Unreal Code</a></li>
+			<li><a href="models.html">3D Modeling</a></li>
+		</ul>
+      <a href="about.html"><li>About</li></a>
+			</div>
+			</div>
+    </ul>
+	
+  </div>
+</nav>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('arrow')[0];
+  if(sub.classList.contains('down')){
+      sub.classList.add("up");    
+      sub.classList.remove("down");
+  } else {
+      sub.classList.add("down");
+      sub.classList.remove("up");
+  }
+}, false);
+	
+</script>
+	
+<script>
+	
+	var element = document.getElementsByClassName('parentmenu')[0];
+element.addEventListener("click", function(e) {
+var sub = document.getElementsByClassName('submenu')[0];
+  if(sub.classList.contains('subrollout')){
+      sub.classList.add("subrollin");    
+      sub.classList.remove("subrollout");
+  } else {
+      sub.classList.add("subrollout");
+      sub.classList.remove("subrollin");
+  }
+}, false);
+	
+</script>
+	
+	
+<!-- Fixed Roadmap Elements -->
+
+	<div class="roadmapwrapper">
+	
+		<div class="leftRoadmap">
+			<div class="rotate90">A</div>
+			<div class="rotate90">b</div>
+			<div class="rotate90">o</div>
+			<div class="rotate90">u</div>
+			<div class="rotate90">t</div>
+		</div>
+		<div class="centerContent">
+		</div>
+		<div class="rightRoadmap">
+			<div class="rotate270">t</div>
+			<div class="rotate270">u</div>
+			<div class="rotate270">o</div>
+			<div class="rotate270">b</div>
+			<div class="rotate270">A</div>
+		</div>
+	</div>
+	
+	<div class="mainWrapper">
+		<div class="Center">
+			
+			<div class="emptySpace"></div>
+			<div class="emptySpace"></div>
+			<div class="emptySpace"></div>
+			<div class="emptySpace"></div>
+			
+			<div class="featuredWork">
+				
+				<!-- About me! -->
+				<div class="workContainer">
+					
+					<div class="imgContainer" style="max-width: 30%">
+						<div class="border-gradient border-gradient-color borderOffsetTop">
+						<div class="border-gradient border-gradient-color borderOffsetBottom">
+						<img class="imgOffset" src="IMG_2809.JPG" style="width: 40vw" alt="">
+						</div>
+						</div>
+					</div>
+					
+					<div class="textHolder">
+						<div class="featuredTitle">The Oldest Work in My Repetoire : Me!</div>
+						<div class="gradient gradientOffsetLeft"></div>
+						<div class="featuredSubtitle">Graduate Student / College Professor / Professional Axe Thrower</div>
+						<br>
+						<div class="featuredInfo fontAvenir">Hello! :D
+						<br>
+						<br>
+						I am a graduate student currently pursuing my MFA in Digital Production Arts at Clemson University. I earned a BFA in Digital Media from the University of North Carolina at Charlotte in 2018. Animation and Film have always been of great interest to me, but never seemed like a career I could achieve; until one day after watching Disney's Treasure Planet I had the realization <i>But I Can</i>, and so <i>I Did</i>. This mindset still drives me forward as I pursue my masters. I have learned so much at Clemson, mostly through trial and error, and despite roadblocks and failed attemtps, I always know <i> I can and I will</i>. One encounter I had with our department director sums up my experience really well; he asked me "Are you survivng?" to which I responded "No. I'm thriving."
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<div class="gradient"></div>
+				<div class="contactInfo">
+					<div class="margin15">Contact me!</div>
+					<div class="margin15">ahj3@clemson.edu</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="centerContent Header">
+		<div class="headTitle"><a href="index.html">Ashley Johnson</a></div>
+		<div class="gradient"></div>
+		<div class="headSubtitle">Animator . Designer . Programmer</div>
+	</div>
+	
+</body>
+</html>

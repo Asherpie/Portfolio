@@ -439,6 +439,7 @@ a {
 
 .textHolder {
 	margin-left: 20px;
+	max-width: 60%;
 }
 
 .imgContainer {
@@ -462,6 +463,7 @@ a {
 
 .featuredInfo {
 	font-family: "AvenirNext-UltraLight";
+	font-size: 20px;
 }
 
 .gradientOffsetLeft {
@@ -715,4 +717,12 @@ img {
 
 .link {
 	text-decoration-line: underline;
+}
+
+.smallHeight {
+	height: 5vh; 
+}
+
+.fontAvenir{
+	font-family: "AvenirNextLTPro-Regular";
 }
